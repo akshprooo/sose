@@ -2,6 +2,7 @@ import React from 'react'
 import Button from '../components/Button'
 import Skill from '../components/Skill'
 import InfoSection from '../components/InfoSection'
+import Footer from '../components/Footer'
 
 const Home = () => {
   const reasons = [
@@ -49,6 +50,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }
