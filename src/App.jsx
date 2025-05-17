@@ -10,6 +10,7 @@ import Events from './pages/Events';
 import PageWrapper from './pages/PageWrapper';
 
 import useLenis from './hooks/useLenis';
+import { Analytics } from "@vercel/analytics/next"
 
 const App = () => {
   useLenis(); // 💡 Lenis runs once and hooks into raf
@@ -18,6 +19,7 @@ const App = () => {
   return (
     <div className="bg-zinc-900 min-h-screen w-full pt-[100px] flex flex-col px-[2.5vw] items-center">
       <Navbar />
+      <Analytics />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<PageWrapper><Home /></PageWrapper>} />
