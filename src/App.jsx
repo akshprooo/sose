@@ -12,7 +12,7 @@ import PageWrapper from './pages/PageWrapper';
 import useLenis from './hooks/useLenis';
 
 const App = () => {
-  useLenis(); // 💡 Lenis runs once and hooks into raf
+  useLenis();
   const location = useLocation();
 
   return (

@@ -1,8 +1,15 @@
 import React from 'react'
 import Button from '../components/Button'
 import Skill from '../components/Skill'
+import InfoSection from '../components/InfoSection'
 
 const Home = () => {
+  const reasons = [
+    {title: 'The city is our campus', image: './assets/city-is-our-campus.jpg'},
+    {title: 'Progressive Education', image: './assets/progressive-education.jpg'},
+    {title: 'A School for Children', image: './assets/a-school-for-children.jpg'}
+  ]
+
   return (
     <div className='w-full min-h-screen relative flex flex-col gap-15'>
       <div className='introDiv'>
@@ -15,11 +22,31 @@ const Home = () => {
         </div>
         <img loading='lazy' src="/assets/school.png" alt="Image Of DBRA SOSE school's Building" className='rounded-md z-1 border-[#738C76] border-2 absolute top-0 left-0 h-[70vh] w-[100vw] object-cover' />
       </div>
-
       <div className='skills w-full flex flex-col gap-6'>
         <h1 className='text-white text-5xl font-[inknut] text-center'>Our Skill Programs</h1>
         <div className='w-full'>
           <Skill />
+        </div>
+        <div className='flex justify-center gap-3 flex-wrap '>
+          <InfoSection />
+        </div>
+        <div className='w-full bg-[#232323] py-5 px-6 sm:px-10 md:px-20 flex flex-col gap-7 rounded-md'>
+          <h1 className='text-white text-3xl sm:text-4xl font-[inknut] text-center'>
+            Why Choose SoSE Dwarka Sector - 5?
+          </h1>
+          <div className='w-full flex flex-wrap justify-center gap-20'>
+            {reasons.map((item, index) => (
+              <div
+                key={index}
+                className='p-4 rounded-xl flex flex-col items-center w-full sm:w-[45%] md:w-[30%] xl:w-[22%]'
+              >
+                <div className={` h-[15rem] w-[15rem] rounded-full bg-cover bg-center`} style={{backgroundImage: `url(${item.image})`}}></div>
+                <h2 className='text-white font-[inknut] text-xl text-center mt-4'>
+                  {item.title}
+                </h2>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
