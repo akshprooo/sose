@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: inknut;
+    src: url(/fonts/Inknut_Antiqua/InknutAntiqua-Regular.ttf);
+}
+@font-face {
+    font-family: inria;
+    src: url(/fonts/Inria_Serif/InriaSerif-Regular.ttf);
+}
+
+body {
+  @apply bg-zinc-900;
+}
