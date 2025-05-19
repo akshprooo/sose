@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../components/common/Button'
+import Button from '../components/Common/Button'
 import Skill from '../components/layout/Skill'
 import InfoSection from '../components/layout/InfoSection'
 import Footer from '../components/layout/Footer'
