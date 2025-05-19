@@ -1,5 +1,5 @@
 const Links = [
-    {title: 'some random link', url: '#'},
+    {title: 'Go To Top', url: '#'},
     {title: 'some random link', url: '#'},
     {title: 'some random link', url: '#'},
     {title: 'some random link', url: '#'},

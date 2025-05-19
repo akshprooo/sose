@@ -1,7 +1,7 @@
 import React from 'react'
 import { Instagram, Facebook, Twitter, ArrowUpRight } from 'lucide-react';
-import Handles from '../utils/SocialHandles'
-import Links from '../utils/Links'
+import Handles from '../../utils/SocialHandles'
+import Links from '../../utils/Links'
 
 const Footer = () => {
   const today = new Date();

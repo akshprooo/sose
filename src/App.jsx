@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
-import Navbar from './components/Navbar';
+import Navbar from './components/layout/Navbar';
 import Home from './pages/Home';
 import Gallery from './pages/Gallery';
 import AboutUs from './pages/AboutUs';

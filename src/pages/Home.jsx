@@ -1,8 +1,8 @@
 import React from 'react'
-import Button from '../components/Button'
-import Skill from '../components/Skill'
-import InfoSection from '../components/InfoSection'
-import Footer from '../components/Footer'
+import Button from '../components/common/Button'
+import Skill from '../components/layout/Skill'
+import InfoSection from '../components/layout/InfoSection'
+import Footer from '../components/layout/Footer'
 
 const Home = () => {
   const reasons = [

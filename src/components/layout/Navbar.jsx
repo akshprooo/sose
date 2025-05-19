@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import ButtonShadow from './ButtonShadow'
-import Pages from '../utils/Pages'
+import ButtonShadow from '../Common/ButtonShadow'
+import Pages from '../../utils/Pages'
 import { useLocation } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 
