@@ -128,7 +128,7 @@ const Navbar = () => {
         <div className="relative h-full p-8 pt-24 overflow-y-auto">
           <div className="flex items-center gap-3 mb-8 pb-6 border-b border-zinc-600/30">
             <img src="./sose_logo.png" alt="Institution Logo" className="h-10 opacity-80" />
-            <div className="text-white/60 text-sm">Navigation Menu</div>
+            <div className="text-white/60 text-sm">Dr. Bhim Rao Ambedkar School Of Specialized Excellence Sector-5, Dwarka</div>
           </div>
           
           <div className="flex flex-col gap-3">
