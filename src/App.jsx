@@ -24,7 +24,7 @@ const App = () => {
           <Route path="/gallery" element={<PageWrapper><Gallery /></PageWrapper>} />
           <Route path="/about" element={<PageWrapper><AboutUs /></PageWrapper>} />
           <Route path="/events" element={<PageWrapper><Events /></PageWrapper>} />
-          <Route path="*" element={<h1>404 Not Found</h1>} />
+          <Route path="*" element={<h1 className='text-white'>404 Not Found</h1>} />
         </Routes>
       </AnimatePresence>
     </div>
