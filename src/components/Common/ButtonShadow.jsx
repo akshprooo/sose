@@ -1,16 +1,23 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
-const ButtonShadow = ({ link, text, clicked }) => {
+const ButtonShadow = ({ link, text }) => {
+  const location = useLocation()
+  const isActive = location.pathname === link
+
   return (
     <Link to={link} className="inline-block w-full md:w-auto">
-      <button
-        className={`${
-          clicked ? 'bg-[#738C76]' : 'bg-[#536250]'
-        } cursor-pointer text-white w-full md:w-auto py-2.5 px-5 sm:py-3.5 sm:px-7 md:text-xl text-base rounded-md transition duration-300 ease-in-out hover:scale-105`}
+      <div
+        className={`relative px-4 py-2 rounded-lg font-medium transition-all duration-300 ease-out text-center
+          ${isActive 
+            ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg' 
+            : 'text-zinc-300 hover:text-white hover:bg-zinc-600/50'}
+          before:absolute before:inset-0 before:rounded-lg before:bg-white/10 
+          before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300
+        `}
       >
         {text}
-      </button>
+      </div>
     </Link>
   )
 }
