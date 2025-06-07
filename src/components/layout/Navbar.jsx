@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { Menu, X } from 'lucide-react'
 import { useLocation } from 'react-router-dom'
 import Pages from '../../utils/Pages'
 import ButtonShadow from '../Common/ButtonShadow'
+import { SchoolInfo } from '../../context/SchoolContext'
 
 const Navbar = () => {
   const location = useLocation()
@@ -10,6 +11,8 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false)
   const [lastScrollY, setLastScrollY] = useState(0)
   const [navVisible, setNavVisible] = useState(true)
+
+  const schoolInfo = useContext(SchoolInfo);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -87,7 +90,7 @@ const Navbar = () => {
           <div className="flex items-center gap-3 mb-8 pb-6 border-b border-zinc-600/30">
             <img src="/sose_logo.png" alt="Institution Logo" className="h-10 opacity-80" />
             <p className="text-white/60 text-sm">
-              Dr. Bhim Rao Ambedkar SOSE Sector-5, Dwarka
+              {schoolInfo.FullName}
             </p>
           </div>
 

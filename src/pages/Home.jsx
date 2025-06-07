@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Button from '../components/Common/Button'
 import Skill from '../components/layout/Skill'
 import InfoSection from '../components/layout/InfoSection'
 import Footer from '../components/layout/Footer'
+import { SchoolInfo } from '../context/SchoolContext'
 
 const Home = () => {
   const reasons = [
@@ -11,13 +12,15 @@ const Home = () => {
     {title: 'A School for Children', image: './assets/a-school-for-children.jpg'}
   ]
 
+  const schoolInfo = useContext(SchoolInfo);
+
   return (
     <div className='w-full min-h-screen relative flex flex-col gap-15'>
       <div className='introDiv'>
         <div className='h-[70vh] w-full z-10 relative p-6 rounded-md flex flex-col justify-center gap-8'>
           <div className='flex flex-col gap-4'>
-            <h1 className='text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl w-full sm:w-[90%] md:w-[80%] lg:w-[70%] font-[inknut] leading-[125%]'>Dr. Bhim Rao Ambedkar School Of Specialized Excellence Sector-5, Dwarka</h1>
-            <h2 className='text-white font-[inria] text-xl sm:text-2xl md:text-3xl lg:text-4xl'>High End 21st Century Skills</h2>
+            <h1 className='text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl w-full sm:w-[90%] md:w-[80%] lg:w-[70%] font-[inknut] leading-[125%]'>{schoolInfo.FullName}</h1>
+            <h2 className='text-white font-[inria] text-xl sm:text-2xl md:text-3xl lg:text-4xl'>{schoolInfo.spl}</h2>
           </div>
           <Button text='Learn More' href='#' />
         </div>
