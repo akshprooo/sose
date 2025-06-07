@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react'
 import { Menu, X } from 'lucide-react'
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import Pages from '../../utils/Pages'
 import ButtonShadow from '../Common/ButtonShadow'
 import { SchoolInfo } from '../../context/SchoolContext'
@@ -43,7 +43,7 @@ const Navbar = () => {
         fixed top-[10px] left-1/2 -translate-x-1/2 z-[9999] w-[95vw] h-[80px]
         flex items-center justify-between px-[2vw] rounded-xl
         transition-all duration-500 ease-out
-        ${navVisible ? 'translate-y-0 scale-100' : '-translate-y-24 scale-95'}
+        ${navVisible ? 'translate-y-0 scale-100 translate-z-0' : '-translate-y-24 scale-95 -translate-z-3'}
         ${scrolled 
           ? 'bg-zinc-800/90 backdrop-blur-lg border border-zinc-600/30 shadow-2xl'
           : 'bg-zinc-700/95 backdrop-blur-sm shadow-lg'}
@@ -53,7 +53,7 @@ const Navbar = () => {
       `}>
         {/* Logo */}
         <div className="relative group h-full flex items-center">
-          <img src="/sose_logo.png" alt="Logo" className="h-12 w-auto object-contain transition-all group-hover:scale-110 group-hover:brightness-110 drop-shadow-lg" />
+          <Link to={'/'}><img src="/sose_logo.png" alt="Logo" className="h-12 w-auto object-contain transition-all group-hover:scale-110 group-hover:brightness-110 drop-shadow-lg" /></Link>
         </div>
 
         {/* Desktop Nav */}
