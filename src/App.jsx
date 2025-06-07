@@ -8,6 +8,7 @@ import Gallery from './pages/Gallery';
 import AboutUs from './pages/AboutUs';
 import Events from './pages/Events';
 import PageWrapper from './pages/PageWrapper';
+import PageNotFound from './pages/PageNotFound';
 
 import useLenis from './hooks/useLenis';
 
@@ -24,7 +25,7 @@ const App = () => {
           <Route path="/gallery" element={<PageWrapper><Gallery /></PageWrapper>} />
           <Route path="/about" element={<PageWrapper><AboutUs /></PageWrapper>} />
           <Route path="/events" element={<PageWrapper><Events /></PageWrapper>} />
-          <Route path="*" element={<h1 className='text-white'>404 Not Found</h1>} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </AnimatePresence>
     </div>

@@ -43,7 +43,7 @@ const Navbar = () => {
         fixed top-[10px] left-1/2 -translate-x-1/2 z-[9999] w-[95vw] h-[80px]
         flex items-center justify-between px-[2vw] rounded-xl
         transition-all duration-500 ease-out
-        ${navVisible ? 'translate-y-0' : '-translate-y-24'}
+        ${navVisible ? 'translate-y-0 scale-100' : '-translate-y-24 scale-95'}
         ${scrolled 
           ? 'bg-zinc-800/90 backdrop-blur-lg border border-zinc-600/30 shadow-2xl'
           : 'bg-zinc-700/95 backdrop-blur-sm shadow-lg'}
