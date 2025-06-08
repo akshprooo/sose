@@ -82,7 +82,7 @@ const Navbar = () => {
       </nav>
 
       {/* Mobile Drawer */}
-      <aside className={`fixed top-0 left-0 h-full w-80 z-[99999] transition-transform duration-500 ease-out ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+      <aside className={`fixed top-0 left-0 h-full w-[75vw] z-[99999] transition-transform duration-500 ease-out ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         <div className="absolute inset-0 bg-gradient-to-br from-zinc-900/95 to-zinc-800/95 backdrop-blur-xl" />
         <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10" />
 

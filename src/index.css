@@ -8,6 +8,10 @@
     font-family: inria;
     src: url(/fonts/Inria_Serif/InriaSerif-Regular.ttf);
 }
+@font-face {
+  font-family: nmr;
+  src: url(/fonts/neuemontreal-regular.otf);
+}
 
 body {
   @apply bg-zinc-900;
