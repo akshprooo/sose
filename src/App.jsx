@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
-
+import {Analytics} from '@vercel/analytics/react'
 import Navbar from './components/layout/Navbar';
 import Home from './pages/Home';
 import Gallery from './pages/Gallery';
@@ -28,6 +28,7 @@ const App = () => {
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </AnimatePresence>
+      <Analytics />
     </div>
   );
 };
