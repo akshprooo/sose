@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useContext } from 'react'
 import { Menu, X } from 'lucide-react'
 import { Link, useLocation } from 'react-router-dom'
-import Pages from '../../utils/Pages'
-import ButtonShadow from '../Common/ButtonShadow'
+import Pages from '../../data/Pages'
+import ButtonShadow from '../Common/ButtonNav'
 import { SchoolInfo } from '../../context/SchoolContext'
 
 const Navbar = () => {

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import Button from '../components/Common/Button'
+import Button from '../components/Common/ButtonPrimary'
 import Skill from '../components/layout/Skill'
 import InfoSection from '../components/layout/InfoSection'
 import Footer from '../components/layout/Footer'

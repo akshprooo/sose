@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { Instagram, Facebook, Twitter, ArrowUpRight } from 'lucide-react';
-import Handles from '../../utils/SocialHandles'
-import Links from '../../utils/Links'
+import Handles from '../../data/SocialHandles'
+import Links from '../../data/Links'
 import { SchoolInfo } from '../../context/SchoolContext';
 
 const Footer = () => {
